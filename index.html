@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="calculatorBody">
+        <div>
+            <h1>Simple Calculator</h1>
+            <input type="text" id="calScreen" disabled>
+        </div>
+        <div class="calButton">
+            <table>
+                <tr>
+                    <td colspan="2"><button id="clearBtn" onclick="clearScr()">C</button></td>
+                    <td><button class="operator" onclick="details('%')">%</button></td>
+                    <td><button class="operator" onclick="details('/')">&#247;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="details('7')">7</button></td>
+                    <td><button onclick="details('8')">8</button></td>
+                    <td><button onclick="details('9')">9</button></td>
+                    <td><button class="operator" onclick="details('*')">&#215;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="details('4')">4</button></td>
+                    <td><button onclick="details('5')">5</button></td>
+                    <td><button onclick="details('6')">6</button></td>
+                    <td><button class="operator" onclick="details('+')">&#43;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="details('1')">1</button></td>
+                    <td><button onclick="details('2')">2</button></td>
+                    <td><button onclick="details('3')">3</button></td>
+                    <td><button class="operator" onclick="details('-')">&#8722;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="details('0')">0</button></td>
+                    <td><button onclick="details('.')">.</button></td>
+                    <td colspan="2"><button id="resultBtn" onclick="display()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
